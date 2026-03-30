@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+    <div class="bg-hearts" id="bg-hearts"></div>
+
+    <audio id="bg-music" loop>
+        <source src="song.mp3" type="audio/mpeg">
+    </audio>
+
+    <div id="loading-screen" class="screen">
+        <div class="loader-content">
+            <img src="gif.jpeg" alt="Cute Cat" class="cute-gif" style="width: 150px;">
+            <h2>Preparing your surprise...</h2>
+            <div class="progress-bar" style="width: 200px; height: 10px; background: #eee; border-radius: 5px; margin: 20px auto; overflow: hidden;">
+                <div class="progress" style="width: 0%; height: 100%; background: var(--primary-pink); transition: width 3s ease;"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="cake-screen" class="screen hidden">
+        <div class="glass-card">
+            <h1 class="title">Happy Birthday, My Girl! ❤️</h1>
+            <p class="subtitle">Tap the cake to celebrate</p>
+            <div class="cake-container" onclick="cutCake()">
+                <img id="cake-img" src="https://cdn-icons-png.flaticon.com/512/2682/2682340.png" alt="Cake">
+            </div>
+        </div>
+    </div>
+
+    <div id="content-screen" class="screen hidden">
+        <h1 class="cursive-title">Our Sweetest Moments</h1>
+        
+        <div class="gallery">
+            <div class="photo-frame"><img src="1.jpg" alt="Photo 1"></div>
+            <div class="photo-frame"><img src="2.jpg" alt="Photo 2"></div>
+            <div class="photo-frame"><img src="3.jpg" alt="Photo 3"></div>
+            </div>
+
+        <div class="message-box">
+            <h2>A Special Message For You</h2>
+            <p>
+                Happy Birthday! Aaru You are the dream of my happiness, the love of my life, 
+                and the constant smile on my face. May your day be as radiant as your soul.
+                Thank you for another year of being the most supportive, fun, and wonderful
+                person in my life. 
+                I am so grateful for our unforgettable memories and cannot wait for more 
+                adventures together. Cheers to you, your health, and a fabulous year ahead! 
+
+            </p>
+            <span class="heart-icon" style="font-size: 2rem;">❤️</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
